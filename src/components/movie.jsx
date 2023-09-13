@@ -162,7 +162,7 @@ const Movie = () => {
         </div>
 
         <div className="movie_container" data-testid="movie-card">
-          {moviesData.map((movie) => (
+          {moviesData.slice(0, 10).map((movie) => (
             <Link
               to={`/${movie.id}`}
               key={movie.id}
